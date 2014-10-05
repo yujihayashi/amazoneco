@@ -8039,3 +8039,10 @@ div.star.star_hover:after {
   background-color: #ce1f21; }
   .btn-pinterest:hover i {
     color: white; }
+
+
+
+body {background: url(../img/bg.jpg) repeat;}
+.header-container, header {background: url(../img/bg-header-x.jpg) repeat-x top;}
+header .container {background: url(../img/bg-header.jpg) no-repeat left top;}
+header .row #header_logo {padding-top:4px;}
