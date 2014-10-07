@@ -30,15 +30,59 @@
 					</div><!-- .row -->
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
-			
+			<div class="site-banners">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="/themes/amazoneco/img/chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
+						</div> <!-- .col-md-6 -->
+						<div class="col-md-6">
+							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="/themes/amazoneco/img/chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
+							
+						</div> <!-- .col-md-6 -->
+					</div> <!-- .row -->
+				</div> <!-- .container -->
+			</div> <!-- .site-banners -->
+			<div class="container">
+				<div class="row text-center box-info-footer">
+					<div class="col-md-4">
+						<span class="icone-frete">&nbsp;</span>
+						<span class="inline-block">
+							Entregamos <br><strong>para todo o <br>Brasil!</strong>
+						</span>
+					</div> <!-- .col-md-4 -->
+					<div class="col-md-4">
+						<span class="icone-phone">&nbsp;</span>
+						<span class="inline-block">
+							<strong>Compre pelo <br>telefone!</strong><br>
+							0800 0000
+						</span>
+					</div> <!-- .col-md-4 -->
+					<div class="col-md-4">
+						<span class="icone-reciclar">&nbsp;</span>
+						<span class="inline-block">
+							Linha de <br><strong>produtos 100% <br>ecológicos!</strong>
+						</span>
+					</div> <!-- .col-md-4 -->
+				</div> <!-- .row -->
+			</div> <!-- .container -->
 			{if isset($HOOK_FOOTER)}
 				<!-- Footer -->
-				<div class="footer-container">
-					<footer id="footer"  class="container">
-						<div class="row">{$HOOK_FOOTER}</div>
-					</footer>
-				</div><!-- #footer -->
+				<div class="extra-footer">
+					<div class="footer-container">
+						<footer id="footer"  class="container">
+							<div class="row">{$HOOK_FOOTER}</div>
+						</footer>
+					</div><!-- #footer -->
+				</div><!-- .extra-footer -->
 			{/if}
+			<div class="extra-direitos">
+				<div class="site-direitos">
+					<div class="container text-center">
+						<small class="text-muted">Copyright © Amazon Eco. 2014. All rights reserved. Desenvolvido por: <a href="http://www.libradesign.com.br" target="_blank" title="Libra Design +Tech"><img src="/themes/amazoneco/img/libra.png" alt="Logotipo Libra Design +Tech"></a></small>
+					</div> <!-- .container -->
+				</div> <!-- .site-direitos -->
+			</div> <!-- .extra-direitos -->
 		</div><!-- #page -->
 {/if}
 {include file="$tpl_dir./global.tpl"}
