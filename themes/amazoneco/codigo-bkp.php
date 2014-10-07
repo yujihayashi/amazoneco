@@ -41,3 +41,10 @@
 		Linha de <br><strong>produtos 100% <br>ecológicos!</strong>
 	</span>
 </div> <!-- .box-info-footer -->
+
+<div class="pagamento">
+	<h4>Formas de pagamento</h4>
+	<p>
+		<img src="/themes/amazoneco/img/pagseguro-sm.png" alt="Pague com o PagSeguro" class="img-responsive">
+	</p>
+</div> <!-- .pagamento -->
