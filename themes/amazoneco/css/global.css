@@ -19,6 +19,16 @@ header .container {background: url(../img/bg-header.jpg) no-repeat left top;}
 #page #header .shopping_cart > a:first-child:before {content: " ";}
 #page #header .shopping_cart > a:first-child {background: #d7c9a7;-webkit-border-radius: 10px 10px 0px 0px;-moz-border-radius: 10px 10px 0px 0px;-ms-border-radius: 10px 10px 0px 0px;-o-border-radius: 10px 10px 0px 0px;border-radius: 10px 10px 0px 0px;text-shadow:none;height: 46px;font-size: 12px;padding-left:2px;}
 #page #header .shopping_cart > a:first-child b {background: url(../img/icon/carrinho.png) no-repeat left center;padding:6px  0 6px 36px;display: inline-block;font-size: 14px;color: #327e00;}
+#page #header .cart_block {color: #555;-webkit-border-radius: 0px 0px 5px 5px;-moz-border-radius: 0px 0px 5px 5px;-ms-border-radius: 0px 0px 5px 5px;-o-border-radius: 0px 0px 5px 5px;border-radius: 0px 0px 5px 5px;overflow: hidden;}
+#page #header .cart_block a {color: #327e00;}
+#page #header .cart_block dt {background: none;border-top:1px solid #d7c9a7;}
+#page #header .cart_block dt.first-item {border-top:0;}
+#page #header .cart_block .products {margin-bottom: 0;background:#FFF;}
+#page #header .cart_block .cart-prices {background:#d7c9a7;padding-bottom:15px;}
+#page #header .cart_block .price {color: #555555;}
+#page #header .cart_block .cart-prices .cart-prices-line {border-color: #b2a27c;}
+#page #header .cart_block .cart-buttons {background: none;padding:0;}
+#page #header .cart_block .cart-buttons a {margin-bottom: 0;color: #FFF;text-shadow:none;border:0;}
 .columns-container {background: none;}
 .extra-footer {background: url(../img/bg-footer.jpg) repeat;}
 .footer-container {background: url(../img/bg-footer-header.png) repeat-x top;}
@@ -109,8 +119,9 @@ ul.product_list.grid > li .product-container .product-image-container {border:0 
   #search_block_top {position: absolute;padding:0 !important;right: 0;top: 22px;width: 214px !important;}
   #page #search_block_top #search_query_top {-webkit-border-radius: 5px 0px 0px 5px;-moz-border-radius: 5px 0px 0px 5px;-ms-border-radius: 5px 0px 0px 5px;-o-border-radius: 5px 0px 0px 5px;border-radius: 5px 0px 0px 5px;height: 36px;line-height: 36px;}
   #page #search_block_top .btn.button-search {padding:6px 0;}
-#page #header .cart_block {top:46px;}
-	#page #header .shopping_cart {position: absolute;padding-top:0;right: 0;top:75px;width: 214px;}
+
+  #page #header .shopping_cart {position: absolute;padding-top:0;right: 0;top:75px;width: 214px;}
+  #page #header .cart_block {top:46px;width: 214px;}
   #header_links a {color: #FFF;}
   #block_top_menu {padding-top:0 !important;}
   #block_top_menu .sf-menu {background: none;border-bottom: 0;}
@@ -119,15 +130,15 @@ ul.product_list.grid > li .product-container .product-image-container {border:0 
   #block_top_menu .sf-menu > li > a {border-bottom: 0;color: #FFF;text-transform: none;font-size: 18px;padding:20px 20px 21px;}
   #block_top_menu .sf-menu > li > a:hover, #block_top_menu .sf-menu > li.sfHover > a {background: none;text-decoration: underline;}
   #block_top_menu .sf-menu > li.sfHover > a, .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a { background: none !important;}
-#home-page-tabs > li {border-left: 1px solid #d2b791;}
-#home-page-tabs > li:first-child {margin-left: -15px;}
+  #home-page-tabs > li {border-left: 1px solid #d2b791;}
+  #home-page-tabs > li:first-child {margin-left: -15px;}
 
-#htmlcontent_home ul li {width: 50%;}
-.box-banner #homepage-slider .bx-wrapper {width: 917px;height: 235px;margin:0 auto;}
-.site-banners .row [class^='col-'] {margin-bottom: 0px;}
+  #htmlcontent_home ul li {width: 50%;}
+  .box-banner #homepage-slider .bx-wrapper {width: 917px;height: 235px;margin:0 auto;}
+  .site-banners .row [class^='col-'] {margin-bottom: 0px;}
 
-#htmlcontent_footer {float: left;width: 16.6667%;margin-top:45px;}
-#htmlcontent_footer .row {margin:0;}
-.footer-container #footer ul li.col-xs-4 {width: 100%;}
-.footer-container #footer .icon-double-angle-right {display: none;}
+  #htmlcontent_footer {float: left;width: 16.6667%;margin-top:45px;}
+  #htmlcontent_footer .row {margin:0;}
+  .footer-container #footer ul li.col-xs-4 {width: 100%;}
+  .footer-container #footer .icon-double-angle-right {display: none;}
 }
