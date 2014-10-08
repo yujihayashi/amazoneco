@@ -53,6 +53,8 @@ header .container {background: url(../img/bg-header.jpg) no-repeat left top;}
 .extra-direitos {background: #FFF;}
 .site-direitos {padding:15px 0;}
 
+.columns-container {background: url(../img/bg-interna.jpg) no-repeat center top;}
+.index .columns-container {background: none;}
 #columns {padding-bottom: 0;}
 #columns #cmsinfo_block {border-left:0;background:none;min-height: inherit;}
 #columns #cmsinfo_block > .col-xs-6 {width: 100%;}
@@ -62,20 +64,20 @@ header .container {background: url(../img/bg-header.jpg) no-repeat left top;}
 .box-info-footer {font-size: 18px;text-transform: uppercase;line-height: 1;color: #327e00;}
 .box-info-footer > div {padding:20px 10px;}
 .box-info-footer .inline-block {text-align: left;margin-left: 10px;}
-.box-banner {background: url(../img/bg-banner.jpg) no-repeat center top;height: 323px;padding-top:30px;}
-.box-banner #homepage-slider {overflow: visible;}
-.box-banner #homepage-slider .homeslider-container {-webkit-border-radius: 8px;-moz-border-radius: 8px;-ms-border-radius: 8px;-o-border-radius: 8px;border-radius: 8px;overflow: hidden;}
-.box-banner #homepage-slider .homeslider-description {padding: 26px 480px 50px 30px;}
-.box-banner #homepage-slider .homeslider-description h2 {color: #7da15c;font-size: 20px;font-weight: normal;}
-.box-banner h3 {font-size: 30px;color: #555;margin: 6px 0 0px;line-height: 1;}
-.box-banner h3 span {color: #7da15c;}
-.box-banner #homepage-slider .homeslider-description p {color: #555;font-size: 14px; width: 100%;}
-.box-banner #homepage-slider .bx-wrapper .bx-controls {text-align: center;width: 100%;}
-.box-banner #homepage-slider .bx-wrapper .bx-pager {display: inline-block;background: #d8851b;width: auto;padding:5px 20px;min-width: 138px;height: 28px;position: relative;bottom: 0;margin-top:12px;}
-.box-banner #homepage-slider .bx-wrapper .bx-pager .bx-pager-item, .box-banner #homepage-slider .bx-wrapper .bx-controls-auto .bx-controls-auto-item {vertical-align: middle;}
-.box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {background: #FFF;width: 7px;height: 7px;box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.46);}
-.box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover, .box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active {background: #FFF;width: 13px;height: 13px;}
-.box-banner #homepage-slider .bx-wrapper .bx-viewport {max-height: 235px;overflow: hidden;}
+.index .box-banner {background: url(../img/bg-banner.jpg) no-repeat center top;height: 323px;padding-top:30px;}
+.index .box-banner #homepage-slider {overflow: visible;}
+.index .box-banner #homepage-slider .homeslider-container {-webkit-border-radius: 8px;-moz-border-radius: 8px;-ms-border-radius: 8px;-o-border-radius: 8px;border-radius: 8px;overflow: hidden;}
+.index .box-banner #homepage-slider .homeslider-description {padding: 26px 480px 50px 30px;}
+.index .box-banner #homepage-slider .homeslider-description h2 {color: #7da15c;font-size: 20px;font-weight: normal;}
+.index .box-banner h3 {font-size: 30px;color: #555;margin: 6px 0 0px;line-height: 1;}
+.index .box-banner h3 span {color: #7da15c;}
+.index .box-banner #homepage-slider .homeslider-description p {color: #555;font-size: 14px; width: 100%;}
+.index .box-banner #homepage-slider .bx-wrapper .bx-controls {text-align: center;width: 100%;}
+.index .box-banner #homepage-slider .bx-wrapper .bx-pager {display: inline-block;background: #d8851b;width: auto;padding:5px 20px;min-width: 138px;height: 28px;position: relative;bottom: 0;margin-top:12px;}
+.index .box-banner #homepage-slider .bx-wrapper .bx-pager .bx-pager-item, .index .box-banner #homepage-slider .bx-wrapper .bx-controls-auto .bx-controls-auto-item {vertical-align: middle;}
+.index .box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {background: #FFF;width: 7px;height: 7px;box-shadow:inset 1px 1px 1px rgba(0, 0, 0, 0.46);}
+.index .box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover, .index .box-banner #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active {background: #FFF;width: 13px;height: 13px;}
+.index .box-banner #homepage-slider .bx-wrapper .bx-viewport {max-height: 235px;overflow: hidden;}
 .site-banners .row [class^='col-'] {margin-bottom: 15px;}
 
 #page ul.product_list.grid > li .product-container .product-image-container .content_price {background: #327e00;}
