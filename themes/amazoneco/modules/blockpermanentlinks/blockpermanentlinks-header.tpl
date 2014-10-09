@@ -29,6 +29,6 @@
 	<li id="header_link_empresa"><a href="/content/empresa/" title="Página inicial">Empresa</a></li>
 	<li id="header_link_contact"><a href="{$link->getPageLink('contact', true)|escape:'html'}" title="{l s='contact' mod='blockpermanentlinks'}">Central de Atendimento</a></li>
 	<li id="header_link_sitemap"><a href="{$link->getPageLink('sitemap')|escape:'html'}" title="{l s='sitemap' mod='blockpermanentlinks'}">{l s='sitemap' mod='blockpermanentlinks'}</a></li>
-	<li id="header_link_blog"><a href="/blog/" title="Página inicial">Blog</a></li>
+	<li id="header_link_blog"><a href="/blog" title="Página inicial">Blog</a></li>
 </ul>
 <!-- /Block permanent links module HEADER -->
