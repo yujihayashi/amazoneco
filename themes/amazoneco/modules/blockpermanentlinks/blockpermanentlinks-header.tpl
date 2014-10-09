@@ -22,23 +22,13 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="pagenotfound">
-	<h1>Página não encontrada</h1>
 
-	<p>
-		{l s='We\'re sorry, but the Web address you\'ve entered is no longer available.'}
-	</p>
-
-	<h3>Utilize a busca abaixo para encontrar o produto que deseja.</h3>
-	<form action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="post" class="std">
-		<fieldset>
-			<div>
-				<label for="search_query">{l s='Search our product catalog:'}</label>
-				<input id="search_query" name="search_query" type="text" class="form-control grey" />
-                <button type="submit" name="Submit" value="OK" class="btn btn-default button button-small"><span>{l s='Ok'}</span></button>
-			</div>
-		</fieldset>
-	</form>
-
-	<div class="buttons"><a class="btn btn-default button button-medium" href="{$base_dir}" title="{l s='Home'}"><span><i class="icon-chevron-left left"></i>Página inicial</span></a></div>
-</div>
+<!-- Block permanent links module HEADER -->
+<ul id="header_links">
+	<li id="header_link_home"><a href="/" title="Página inicial">Home</a></li>
+	<li id="header_link_empresa"><a href="/content/empresa/" title="Página inicial">Empresa</a></li>
+	<li id="header_link_contact"><a href="{$link->getPageLink('contact', true)|escape:'html'}" title="{l s='contact' mod='blockpermanentlinks'}">Central de Atendimento</a></li>
+	<li id="header_link_sitemap"><a href="{$link->getPageLink('sitemap')|escape:'html'}" title="{l s='sitemap' mod='blockpermanentlinks'}">{l s='sitemap' mod='blockpermanentlinks'}</a></li>
+	<li id="header_link_blog"><a href="/blog/" title="Página inicial">Blog</a></li>
+</ul>
+<!-- /Block permanent links module HEADER -->

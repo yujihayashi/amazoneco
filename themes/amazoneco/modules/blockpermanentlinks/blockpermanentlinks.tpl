@@ -22,23 +22,21 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="pagenotfound">
-	<h1>Página não encontrada</h1>
 
-	<p>
-		{l s='We\'re sorry, but the Web address you\'ve entered is no longer available.'}
-	</p>
-
-	<h3>Utilize a busca abaixo para encontrar o produto que deseja.</h3>
-	<form action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="post" class="std">
-		<fieldset>
-			<div>
-				<label for="search_query">{l s='Search our product catalog:'}</label>
-				<input id="search_query" name="search_query" type="text" class="form-control grey" />
-                <button type="submit" name="Submit" value="OK" class="btn btn-default button button-small"><span>{l s='Ok'}</span></button>
-			</div>
-		</fieldset>
-	</form>
-
-	<div class="buttons"><a class="btn btn-default button button-medium" href="{$base_dir}" title="{l s='Home'}"><span><i class="icon-chevron-left left"></i>Página inicial</span></a></div>
+<!-- Block permanent links module -->
+<div id="permanent_links">
+	<!-- Sitemap -->
+	<div class="sitemap">
+		<a href="{$link->getPageLink('sitemap')|escape:'html'}" title="{l s='Shop sitemap' mod='blockpermanentlinks'}">{l s='Sitemap' mod='blockpermanentlinks'}</a>
+	</div>
+	<!-- Contact -->
+	<div class="contact">
+		<a href="{$link->getPageLink('contact', true)|escape:'html'}" title="{l s='Contact form' mod='blockpermanentlinks'}">{l s='Contact' mod='blockpermanentlinks'}</a>
+	</div>
+	<!-- Bookmark -->
+	<div class="add_bookmark" style="height:30px;">
+		<script type="text/javascript">
+		writeBookmarkLink('{$come_from}', '{$shop_name|addslashes|addslashes}', '{l s='Bookmark this page' mod='blockpermanentlinks' js=1}');</script>&nbsp;
+	</div>
 </div>
+<!-- /Block permanent links module -->

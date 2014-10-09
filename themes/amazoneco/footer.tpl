@@ -33,11 +33,11 @@
 			<div class="site-banners">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="/themes/amazoneco/img/chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
+						<div class="col-md-6 text-center">
+							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="{$img_dir}chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
 						</div> <!-- .col-md-6 -->
-						<div class="col-md-6">
-							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="/themes/amazoneco/img/chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
+						<div class="col-md-6 text-center">
+							<a href="/blog/" title="Acompanhe as nossas novidades em nosso blog!"><img src="{$img_dir}chamada-blog.jpg" alt="Acompanhe as nossas novidades em nosso blog!" class="img-responsive"></a>
 							
 						</div> <!-- .col-md-6 -->
 					</div> <!-- .row -->
@@ -79,7 +79,7 @@
 			<div class="extra-direitos">
 				<div class="site-direitos">
 					<div class="container text-center">
-						<small class="text-muted">Copyright © Amazon Eco. 2014. All rights reserved. Desenvolvido por: <a href="http://www.libradesign.com.br" target="_blank" title="Libra Design +Tech"><img src="/themes/amazoneco/img/libra.png" alt="Logotipo Libra Design +Tech"></a></small>
+						<small class="text-muted">Copyright © Amazon Eco. 2014. All rights reserved. Desenvolvido por: <a href="http://www.libradesign.com.br" target="_blank" title="Libra Design +Tech"><img src="{$img_dir}libra.png" alt="Logotipo Libra Design +Tech"></a></small>
 					</div> <!-- .container -->
 				</div> <!-- .site-direitos -->
 			</div> <!-- .extra-direitos -->

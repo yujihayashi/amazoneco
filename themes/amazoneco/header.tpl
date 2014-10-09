@@ -91,7 +91,7 @@
 							<div class="row">
 								<div id="header_logo">
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
-										<img class="logo img-responsive" src="/themes/amazoneco/img/amazon-eco.png" alt="{$shop_name|escape:'html':'UTF-8'}"/>
+										<img class="logo img-responsive" src="{$img_dir}amazon-eco.png" alt="{$shop_name|escape:'html':'UTF-8'}"/>
 									</a>
 								</div>
 								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
