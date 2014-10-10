@@ -155,21 +155,6 @@
 				<label>{l s='Model'} </label>
 				<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
 			</p>
-			{if $product->condition}
-			<p id="product_condition">
-				<label>{l s='Condition'} </label>
-				{if $product->condition == 'new'}
-					<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
-					<span class="editable">{l s='New'}</span>
-				{elseif $product->condition == 'used'}
-					<link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
-					<span class="editable">{l s='Used'}</span>
-				{elseif $product->condition == 'refurbished'}
-					<link itemprop="itemCondition" href="http://schema.org/RefurbishedCondition"/>
-					<span class="editable">{l s='Refurbished'}</span>
-				{/if}
-			</p>
-			{/if}
 			{if $product->description_short || $packItems|@count > 0}
 				<div id="short_description_block">
 					{if $product->description_short}
@@ -197,14 +182,6 @@
 					{/if}-->
 				</div> <!-- end short_description_block -->
 			{/if}
-			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
-				<!-- number of item in stock -->
-				<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
-					<span id="quantityAvailable">{$product->quantity|intval}</span>
-					<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
-					<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span>
-				</p>
-			{/if}
 			{if $PS_STOCK_MANAGEMENT}
 				<!-- availability -->
 				<p id="availability_statut"{if ($product->quantity <= 0 && !$product->available_later && $allow_oosp) || ($product->quantity > 0 && !$product->available_now) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
@@ -222,19 +199,6 @@
 			<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
 				{$HOOK_PRODUCT_OOS}
 			</div>
-			{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
-			{if !$content_only}
-				<!-- usefull links-->
-				<ul id="usefull_link_block" class="clearfix no-print">
-					{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-					<li class="print">
-						<a href="javascript:print();">
-							{l s='Print'}
-						</a>
-					</li>
-					{if $have_image && !$jqZoomEnabled}{/if}
-				</ul>
-			{/if}
 		</div>
 		<!-- end center infos-->
 		<!-- pb-right-column-->
@@ -451,7 +415,7 @@
 		{/if}
 		{if isset($features) && $features}
 			<!-- Data sheet -->
-			<section class="page-product-box">
+			<section class="page-product-box page-product-box-ficha">
 				<h3 class="page-product-heading">{l s='Data sheet'}</h3>
 				<table class="table-data-sheet">
 					{foreach from=$features item=feature}
